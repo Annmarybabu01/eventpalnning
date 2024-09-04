@@ -1,0 +1,114 @@
+﻿#content {
+    border: 1px solid #7c7575;
+    display: flex;
+    column-gap: 90px;
+    border-radius: 8px;
+    box-shadow: 0 7px 9px #7c75;
+    margin-right:160px;
+    margin-left:160px;
+}
+#welcomeHeading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#loginHeading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inputField {
+    position: relative;
+    margin: 20px 0;
+}
+.inputField input {
+    width: 100%;
+    max-width: 700px;
+    height: 40px;
+    font-size: 13px;
+    color: black;
+    padding: 0 15px;
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    font-family: 'Poppins', serif;
+}
+.inputField label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: black;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 0.3s ease; /* Smooth transition for the label */
+    white-space: nowrap; /* Prevents label text from wrapping */
+    font-family: Arial, Helvetica, sans-serif
+    }
+.inputField input:focus ~ label,
+.inputField input:not(:placeholder-shown) ~ label {
+    top: -4px; /* Moves label above the input */
+    font-size: 13px;
+    background: rgb(247, 246, 246); /* Background color for floating label */
+    color: black; /* Label text color */
+    font-family: Arial, Helvetica, sans-serif
+ }
+.inputField input::placeholder {
+    color: transparent; /* Hides placeholder text but keeps space for label */
+}
+.optionSection {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 0px;
+}
+.forgotPassword {
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: right;
+}
+#forgotPasswordLink:active {
+    color: blue;
+}
+#forgotPasswordLink {
+    text-decoration: none;
+}
+.loginSection {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.loginSection button {
+    height: 30px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 45px;
+    font-size: 15px;
+    background-color: #94f894;
+    margin-bottom: 0px;
+    font-size: 17px;
+    color: black;
+}
+.loginSection button:hover {
+    background-color: #7bf77b;
+}
+#signUpLink:active {
+    color: blue;
+}
+#signUpLink {
+    text-decoration: none;
+}
+.signUp {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.rememberMeForgotPassword {
+    display: flex;
+    column-gap: 100px;
+}

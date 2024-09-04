@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "SignIn";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="~/css/signinstyles.css" />
+</head>
+<body id="bodyStyle">
+    <div id="container">
+        <div id="content">
+        <!--login Image-->
+        <div class="loginImageLeft">
+            <img src="~/images/signin.jpg" style="height:470px;width:300px;display: block;" alt="login Image">
+        </div>
+        <!--Login entry side-->
+        <div class="mainBody">
+            <header id="welcomeHeading">Welcome Back!</header>
+            <header id="loginHeading">Login to your account</header>
+            <form>
+                <div class="inputField">
+                    <input type="text" id="userName" name="userName" placeholder="">
+                    <label>Username</label>
+                </div>
+                <div class="inputField">
+                    <input type="password" id="password" name="password" placeholder="">
+                    <label>Password</label>
+                </div>
+                <div class="rememberMeForgotPassword">
+                    <div class="optionSection">
+                        <div>
+                            <input type="checkbox" id="rememberMe" name="rememberMe" value="rememberMe">
+                        </div>
+                        <div>
+                            <label>Remember me</label><br>
+                        </div>
+                    </div>
+                    <div class="forgotPassword">
+                        <a id="forgotPasswordLink" href="" target="_blank">Forgot Password?</a></p>
+                    </div>
+                </div>
+                <div class="loginSection">
+                    <button id="loginButton" type="button">Login</button>
+                </div>
+                <div class="signUp">
+                    <div>Don't have an account? <a id="signUpLink" href="registeration.html" target="_self">Sign Up</a></div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="loginScript.js"></script>
+</body>
+</html>
+
+

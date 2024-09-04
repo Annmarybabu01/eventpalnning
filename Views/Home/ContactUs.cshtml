@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "ContactUs";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to custom CSS -->
+    <link rel="stylesheet" href="~/css/contactUsStyles.css" />
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI JavaScript -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="container">
+        <heading id="contactUsHeading">Contact us</heading>
+        <div class="enqirySection">
+            <div class="formSection">
+                <form id="formSection">
+                    <heading id="enquiryHeading">If you don’t share your problem, we can’t help.</heading>
+                    <div class="inputField">
+                        <input type="text" id="fullName" name="fullName" placeholder="">
+                        <label>Name</label>
+                    </div>
+                    <div class="inputField">
+                        <input type="email" id="email" name="email" placeholder="">
+                        <label>Email Address</label>
+                    </div>
+                    <div class="inputFieldSpecial">
+                        <textarea id="message" name="message" placeholder=""></textarea>
+                        <label>Message</label>
+                    </div>
+                    <div id="sendMessageButtonSection">
+                        <button type="submit" id="sendMessage" value="sendMessage">Contactus</button>
+                    </div>
+                </form>
+            </div>
+            <div class="imageSection">
+                <img src="~/images/contactusimg.jpg" alt="contact image" height="500px" width="500px"></img>
+            </div>
+        </div>
+        <div>
+            <div id="pointsOfContact">
+                <heading id="pointsOfContactHeading">Points of Contact</heading>
+            </div>
+            <div id="companyName">Hexa Company</div>
+            <div id="adressSection">
+                <p>Infopark Phase 2</p><p>Kakkanad</p><p>Kerala 682030</p>
+            </div>
+            <div id="phoneNumberSection">
+                <p><i class="fas fa-phone icon"></i> +91 6282551289</p>
+            </div>
+            <div id="emailSection">
+                <p><i class="fas fa-envelope-open icon"></i><a href="mailto:hexa@gamil.com"> hexa@gmail.com</a></p>
+            </div>
+            <div id="webLinkSection">
+                <p><i class="fas fa-external-link-alt icon"></i><a href="https://www.hexa.com"> https://www.hexa.com</a></p>
+            </div>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15716.381479847056!2d76.36553743193014!3d10.008980822821062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080b6ff2838e15%3A0x4a62a83f2a896bd6!2sInfopark%20Phase%202%2C%20Kakkanad%2C%20Kerala%20682030!5e0!3m2!1sen!2sin!4v1725337072865!5m2!1sen!2sin" 
+                width="1100" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </div>
+    <script src="~/js/contactUsScrpits.js"></script>
+</body>
+</html>
+
